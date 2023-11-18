@@ -1,4 +1,4 @@
-# Roofing Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Roofing Calculator Widget for WordPress
 
 Use a free roofing square footage calculator to determine your roof size and get the right amount of roofing shingles for your job. Estimate cost, time, and labor for DIY or contractors.
 
