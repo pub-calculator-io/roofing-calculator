@@ -1,4 +1,4 @@
-=== Roofing Calculator by www.calculator.io ===
+=== CI Roofing calculator ===
 Contributors: calculatorio
 Tags: roofing calculator, roof area estimation, roofing material calculation, house base area measurement, common roofing materials, roof lifespan analysis, roof pitch measurement, roof slope correction factor, roofing material types, calculating roof construction materials
 Requires at least: 5.0

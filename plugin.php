@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Roofing Calculator by www.calculator.io
+Plugin Name: CI Roofing calculator
 Plugin URI: https://www.calculator.io/roofing-calculator/
 Description: Use a free roofing square footage calculator to determine your roof size and get the right amount of roofing shingles for your job. Estimate cost, time, and labor for DIY or contractors.
 Version: 1.0.0
