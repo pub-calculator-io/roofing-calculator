@@ -7,7 +7,7 @@ Use a free roofing square footage calculator to determine your roof size and get
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/roofing-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /roofing-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Roofing Calculator](https://www.calculator.io/roofing-calculator/ "Roofing Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
