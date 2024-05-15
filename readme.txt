@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Roofing Calcula
 == Screenshots ==
 
 1. The Roofing Calculator Input Form.
-2. The Roofing Calculator Calculation Results.
 
 == Installation ==
 

@@ -58,7 +58,7 @@
                 		</label>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col ">
+                		<label class="input col square-footage-calculator,concrete-calculator">
                 			<p class="input__title">Pitch or Angle</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -74,7 +74,7 @@
                 			</div>
                 		</label>	</div>
                 	<div class="input-wrapper row pitch_or_angle related-to-pitch_or_angle-0">
-                		<label class="input col ">
+                		<label class="input col square-footage-calculator,concrete-calculator">
                 			<p class="input__title">Roof Pitch</p>
                 			<div class="dropdown-wrapper">
                 				<div class="input-field row " tabindex="0">
@@ -156,7 +156,7 @@
                 			</div>
                 		</label>	</div>
                 	<div class="input-wrapper row pitch_or_angle related-item-hidden related-to-pitch_or_angle-1">
-                		<label class="input col   ">
+                		<label class="input col square-footage-calculator,concrete-calculator  ">
                 			<p class="input__title">Roof Angle</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="roof_angle" value=""  />
@@ -212,7 +212,7 @@
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row tab tab--active" data-tab="0">
                 
                 
-                		<button class="system-switcher" onclick="toggleSystem(this)">
+                		<button class="system-switcher" onclick="toggleSystem(this)" aria-label="Switch System">
                 			<div class="system-switcher__circle"></div>
                 			<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 	<path d="M10.5 9.5H10C9.44772 9.5 9 9.05228 9 8.5V2.5M4.5 2.5H3.5C2.94772 2.5 2.5 2.94772 2.5 3.5L2.5 9.5M7.5 4.5L10.5 4.5M1.5 5.5L4.5 5.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
@@ -233,17 +233,19 @@
                 		</script>
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
                 <div class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row tab " data-tab="1">
                 
                 
-                		<button class="system-switcher" onclick="toggleSystem(this)">
+                		<button class="system-switcher" onclick="toggleSystem(this)" aria-label="Switch System">
                 			<div class="system-switcher__circle"></div>
                 			<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 	<path d="M10.5 9.5H10C9.44772 9.5 9 9.05228 9 8.5V2.5M4.5 2.5H3.5C2.94772 2.5 2.5 2.94772 2.5 3.5L2.5 9.5M7.5 4.5L10.5 4.5M1.5 5.5L4.5 5.5" stroke="white" stroke-width="2" stroke-linecap="round"></path>
@@ -264,8 +266,10 @@
                 		</script>
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate2(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate2(this); animateElements();" data-action="calculate2" id="action-button">Calculate</button>
                 </div>
+                
+                
                 
                 
                 
@@ -284,13 +288,12 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col tab tab--active" data-tab="0">
 	<p class="table-cell table-cell--dark table-cell--only-title">Roofing</p>
-	<p class="table-cell table-cell--only" id="result-0-1">The estimated roof area is 2,818 square feet<br><br>or 261.8 square meters or 313.1 square yards.<br><br>To have 10% buffer would require 31 roof squares.</p>
+	<p class="table-cell table-cell--only animate" id="result-0-1">The estimated roof area is 2,818 square feet<br><br>or 261.8 square meters or 313.1 square yards.<br><br>To have 10% buffer would require 31 roof squares.</p>
 	<p class="table-cell table-cell--dark table-cell--only-title">By United States standard, the roof will need:</p>
-	<p class="table-cell table-cell--only" id="result-0-2">
+	<p class="table-cell table-cell--only animate" id="result-0-2">
 		85 bundles of composition shingles (each bundle will cover ~33 ft2)<br>
 		29 rolls of roll roofing (~36 in × 36 ft for each roll)<br>
 		8 rolls of #15 felt (~36 in × 144 ft for each roll)<br>
@@ -300,11 +303,11 @@
 
 <div class="calculator-result col tab" data-tab="1">
 	<p class="table-cell table-cell--dark table-cell--only-title">Roofing</p>
-	<p class="table-cell table-cell--only" id="result-1-1">
+	<p class="table-cell table-cell--only animate" id="result-1-1">
 		To have 10% buffer would require 25 roof squares.
 	</p>
 	<p class="table-cell table-cell--dark table-cell--only-title">By United States standard, the roof will need:</p>
-	<p class="table-cell table-cell--only" id="result-1-2">
+	<p class="table-cell table-cell--only animate" id="result-1-2">
 		67 bundles of composition shingles (each bundle will cover ~33 ft2)<br>
 		23 rolls of roll roofing (~36 in × 36 ft for each roll)<br>
 		6 rolls of #15 felt (~36 in × 144 ft for each roll)<br>

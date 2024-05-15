@@ -3,7 +3,6 @@
 Use a free roofing square footage calculator to determine your roof size and get the right amount of roofing shingles for your job. Estimate cost, time, and labor for DIY or contractors.
 
 ![Roofing Calculator Input Form](/assets/images/screenshot-1.png "Roofing Calculator Input Form")
-![Roofing Calculator Calculation Results](/assets/images/screenshot-2.png "Roofing Calculator Calculation Results")
 
 ## Installation
 
